@@ -1,0 +1,12 @@
+@(message:String, data:PersonEntity, id:Int)
+
+
+@main("Show Person", "Show", "copyright 2018.") {
+    <p>@message</p>
+    <table>
+        <tr><th>ID</th><td>@data.getId</td></tr>
+        <tr><th>name</th><td>@data.getName</td></tr>
+        <tr><th>mail</th><td>@data.getMail</td></tr>
+        <tr><th>tel</th><td>@data.getTel</td></tr>
+    </table>
+}

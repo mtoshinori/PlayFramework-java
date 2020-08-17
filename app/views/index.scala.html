@@ -1,0 +1,11 @@
+@(msg:String, data:List[PersonEntity])
+
+
+@main("Index Page", "Hello", "copyright 2018.") {
+    <p>@msg</p>
+    <ul>
+    @for(item<-data){
+        <li>@item</li>
+    }
+    </ul>
+}
